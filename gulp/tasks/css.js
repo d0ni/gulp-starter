@@ -10,7 +10,6 @@ const size = require('gulp-size');
 const usedcss = require('usedcss');
 const rename = require('gulp-rename');
 const mode = require('gulp-mode')();
-const webpCss = require('gulp-webp-css');
 
 const paths = require('../paths');
 
@@ -19,7 +18,6 @@ const css = () => {
     .src(paths.src.css)
     .pipe(plumber())
     .pipe(mode.development(sourcemaps.init()))
-    .pipe(mode.production(webpCss()))
     .pipe(
       sass({
         sourceMap: true,
