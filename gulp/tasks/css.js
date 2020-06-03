@@ -32,9 +32,7 @@ const css = () => {
           usedcss({
             html: [paths.src.html],
             js: [paths.src.js],
-            ignore: [
-              /** String names of ignore classes or Id's */
-            ],
+            ignore: ['.open', '.show'],
           }),
           autoprefixer(),
           cssnano(),
