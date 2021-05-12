@@ -55,6 +55,6 @@
     "usedcss": "^1.0.7"
   },
   "dependencies": {
-    "swiper": "^5.4.1"
+    "swiper": "^6.5.1"
   }
 }
